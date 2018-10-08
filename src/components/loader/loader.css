@@ -1,0 +1,21 @@
+.loader {
+	position: relative;
+	width: 25px;
+	height: 25px;
+
+	&__spinner,
+	&__spinner::after {
+		width: 24px;
+		height: 24px;
+		border-radius: 50%;
+	}
+
+	&__spinner {
+		transition: all 0.2s;
+		transform: translateZ(0);
+		animation: spinner 1.4s infinite linear;
+		border: 3px solid rgba(whiteness(4), 0.2);
+		border-left: 3px solid whiteness(4);
+		font-size: 2px;
+	}
+}
