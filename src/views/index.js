@@ -1,1 +1,3 @@
-export { default } from './mainRouter';
+import Home from './home';
+
+export { Home };
